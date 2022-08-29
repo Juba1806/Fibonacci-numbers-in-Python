@@ -1,4 +1,5 @@
 # making a directory to memoialze
+
 fioniacci ={}
 def fibonacci(x):
     if x in  fioniacci:
@@ -10,5 +11,7 @@ def fibonacci(x):
         value = fibonacci(x-1) + fibonacci(x-2)
     fioniacci[x] = value
     return value
+    
+    
 for x in range(1,200):
     print(x, ":" , fibonacci(x))
